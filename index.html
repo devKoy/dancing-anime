@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+			<meta charset="UTF-8">
+			<title>Page title</title>
+			<link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+			<audio id="audio" loop autoplay>
+						<source src="res/Kero Kero Bonito - Flamingo.mp3"
+						type="audio/mpeg">
+			</audio>
+			<div class="container">
+						<div class="door">
+									<button id="btn">
+												Lets start
+									</button>
+						</div>
+						<div class="card">
+									<img src="res/130733571-ebb561ce-3aba-4e1a-8584-8e2785a17a93.gif" alt="" srcset="">
+									<img class="shadow" src="res/shadow.png" alt=""></img>
+						</div>
+			</div>
+   <script>
+   		var music = document.getElementById('audio');
+   		
+   		document.getElementById('btn').addEventListener('click', function(){
+   					document.getElementsByClassName('door')[0].classList.toggle('hide');
+   					music.play();
+   		})
+   </script>
+</body>
+</html>
